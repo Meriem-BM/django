@@ -1,0 +1,294 @@
+{% extends "base.html" %} 
+{% load static %}
+
+
+{% block content %}
+
+<link  rel="stylesheet" type="text/css" href="{% static '/css/home.css' %}" />
+
+<div class="carousel">
+	<div class="carousel__nav">
+	 <span id="moveLeft" class="carousel__arrow">
+		  <svg class="carousel__icon" width="24" height="24" viewBox="0 0 24 24">
+	  <path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z"></path>
+  </svg>
+	  </span>
+	  <span id="moveRight" class="carousel__arrow" >
+		<svg class="carousel__icon"  width="24" height="24" viewBox="0 0 24 24">
+	<path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path>
+  </svg>    
+	  </span>
+	</div>
+	<div class="carousel-item carousel-item--1">
+	  <div class="carousel-item__image"></div>
+	  <div class="carousel-item__info">
+		<div class="carousel-item__container">
+		<h2 class="carousel-item__subtitle">Problem solving</h2>
+		<h1 class="carousel-item__title">Programming</h1>
+		<p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		<a href="#" class="carousel-item__btn">See my work</a>
+		  </div>
+	  </div>
+	</div>
+	<div class="carousel-item carousel-item--2">
+	  <div class="carousel-item__image"></div>
+	  <div class="carousel-item__info">
+		<div class="carousel-item__container">
+		<h2 class="carousel-item__subtitle">Websites & Blogs</h2>
+		<h1 class="carousel-item__title">Web devlopment</h1>
+		<p class="carousel-item__description">Clear Glass Window With Brown and White Wooden Frame iste natus error sit voluptatem accusantium doloremque laudantium.</p>
+		<a href="#" class="carousel-item__btn">Explore more</a>
+		  </div>
+	  </div>
+	</div>
+	  <div class="carousel-item carousel-item--3">
+	  <div class="carousel-item__image"></div>
+	  <div class="carousel-item__info">
+		<div class="carousel-item__container">
+		<h2 class="carousel-item__subtitle">Frontend & UI design </h2>
+		<h1 class="carousel-item__title">Web design</h1>
+		<p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		<a href="#" class="carousel-item__btn">Discover more</a>
+		  </div>
+	  </div>
+	</div>
+	
+	 <div class="carousel-item carousel-item--4">
+	  <div class="carousel-item__image"></div>
+	  <div class="carousel-item__info">
+		<div class="carousel-item__container">
+		<h2 class="carousel-item__subtitle">Helpful Resources </h2>
+		<h1 class="carousel-item__title">Articles</h1>
+		<p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		<a href="#" class="carousel-item__btn">Find intersting sites</a>
+		  </div>
+	  </div>
+	</div>
+	
+   <div class="carousel-item carousel-item--5">
+	  <div class="carousel-item__image"></div>
+	  <div class="carousel-item__info">
+		<div class="carousel-item__container">
+		<h2 class="carousel-item__subtitle">Get in touch with me </h2>
+		<h1 class="carousel-item__title">Contact</h1>
+		<p class="carousel-item__description">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+		<a href="#" class="carousel-item__btn">Know more about me</a>
+		  </div>
+	  </div>
+	</div>
+  </div>
+
+		
+<section class="wrapper">
+	<!-- BEGIN: card -->
+	<div class="card" data-effect="zoom">
+		<button class="card__save  js-save" type="button">
+			<i class="fa fa-bookmark"></i>
+		</button>
+			<figure  class="card__image">
+			  <img src="/static/images/codein1.jpg" alt="Short description">
+			</figure>
+		<div class="card__header">
+			<figure class="card__profile">
+			  <img src="/static/images/mer.jpg" alt="Short description">
+			</figure>
+		</div>
+		<div class="card__body">
+			<h3 class="card__name">Use Python</h3>
+			<p class="card__job">Programming Language</p>
+			<p class="card__bio">Powerful, concise, and easy to read.<br>
+				From web development to machine learning.
+			</p>
+		</div>
+		<div class="card__footer">
+			<p class="card__date">Feb 10 2018</p>
+			<p class=""></p>
+		</div>
+	</div>
+			<!-- END: card -->
+</section>
+
+
+
+<section class="hero-section">
+	<span class="para-coding">At the moment, I would rather be programming than writing this blog post. Why?
+		It’s my passion. I simply love it.<br>
+		I like to create stuff, and when I am behind my screen coding, I get this overwhelming feeling of doing some kind of magic.<br>
+		It’s the sheer joy of creating new things out of nowhere. Okay, “things” are probably not coming out of nowhere, but that’s how it feels. In the beginning, there’s only an idea and an empty text editor. In the end, there’s a computer software that does amazing stuff.
+	</span>	
+	<span class="vertical-title">MY WORK</span>	
+	<div class="card1-grid">
+		<a class="card1" href="#">
+			<div class="card1__background" style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)"></div>
+		  <div class="card1__content">
+			<p class="card1__category">Category</p>
+			<h3 class="card1__heading">Example Card Heading</h3>
+		  </div>
+		</a>
+		<a class="card1" href="#">
+		  <div class="card1__background" style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+		  <div class="card1__content">
+			<p class="card1__category">Category</p>
+			<h3 class="card1__heading">Example Card Heading</h3>
+		  </div>
+		</a>
+		<a class="card1" href="#">
+		  <div class="card1__background" style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+		  <div class="card1__content">
+			<p class="card1__category">Category</p>
+			<h3 class="card1__heading">Example Card Heading</h3>
+		  </div>
+		</a>
+		<a class="card1" href="#">
+		  <div class="card1__background" style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)"></div>
+		  <div class="card1__content">
+			<p class="card1__category">Category</p>
+			<h3 class="card1__heading">Example Card Heading</h3>
+		  </div>
+		</a>
+	</div>
+</section>
+
+<div class="container-4">
+	<a href="#">
+	<div class="chevron"></div>
+	<div class="chevron"></div>
+	<div class="chevron"></div>
+	<span class="text-scroll">Load more</span>
+	</a>
+  </div>
+
+  <p class="vertical-title2">MOTIVATION</p>				
+
+  <P class="para-motiv">Scientists define motivation as your general willingness to do something. It is the set of psychological forces that compel you to take action. That's nice and all, but I think we can come up with a more useful definition of motivation.<br><br>
+	So what is motivation, exactly? The author Steven Pressfield has a great line in his book, <a href="https://www.amazon.com/gp/product/1936891026/ref=as_li_qf_sp_asin_il_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1936891026&linkCode=as2&tag=jamesclear-20&linkId=7FDOJMMZ57S55VY6"> The War of Art</a>, which I think gets at the core of motivation. To paraphrase Pressfield, “At some point, the pain of not doing it becomes greater than the pain of doing it.”<br>
+
+	In other words, at some point, it is easier to change than to stay the same. It is easier to take action and feel insecure at the gym than to sit still and experience self-loathing on the couch. It is easier to feel awkward while making the sales call than to feel disappointed about your dwindling bank account.
+  </P>
+	
+
+<div class="center-quotes">
+
+	<div class="container">
+	<div class="card2">
+	  <div class="imgBx">
+		<img src="/static/images/Chris-Pine.jpg">
+	  </div>
+	  <div class="contentBx">
+		<h2>Problem solver!</h2>
+		<div class="size">
+		  <h3>Programming isn't about what you know; it's about what you can figure out.</h3>
+		</div>
+		<div class="color">
+		  <h3>Chris Pine</h3>
+		</div>
+		<a href="#"><i class="fas fa-angle-double-right"></i></a>
+	  </div>
+	</div>
+  </div>
+
+
+  <div class="container quote"><img style="top: -20px;" src="/static/images/quotes.png" width="170px"></div>
+
+
+  <div class="container">
+	<div class="card2_1">
+	  <div class="imgBx">
+		<img src="{% static '/images/dennis-ritchie.png' %}">
+	  </div>
+	  <div class="contentBx">
+		<h2>Learn by doing</h2>
+		<div class="size">
+		  <h3>The only way to learn a new programming language is by writing programs in it.</h3>
+		</div>
+		<div class="color">
+		  <h3>Dennis Ritchie</h3>
+		</div>
+		<a href="#"><i class="fas fa-angle-double-right"></i></a>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<script>
+
+	var demoButtons;
+	
+	function start () {
+	  
+	  // Add event "click" to "demo buttons"
+	  demoButtons = document.querySelectorAll ('.js-modify');
+	  for (var i = 0; i < demoButtons.length; i++) {
+		demoButtons[i].addEventListener ('click', toggleEffect);
+	  }
+	  
+	  // Add event "click" to "save buttons"
+	  var saveButtons = document.querySelectorAll ('.js-save');
+	  for (var i = 0; i < saveButtons.length; i++) {
+		saveButtons[i].addEventListener ('click', toggleActive);
+	  }
+	  
+	}
+	
+	// Toggle "effect" classes
+	function toggleEffect () {
+	  var target = document.querySelector (this.dataset.target);
+		  target.dataset.effect = this.dataset.effect;
+	  
+	  for (var i= 0; i < demoButtons.length; i++) {
+		demoButtons[i].classList.remove ('active');
+	  }
+	  
+	  toggleActive.call (this);
+	}
+	
+	// Toggle "active" class
+	function toggleActive () {
+	  this.classList.toggle ('active');
+	}
+	
+	// Invoke "start ()" function
+	window.addEventListener ('load', start);
+	
+	
+	
+	$(function(){
+	  $('.carousel-item').eq(0).addClass('active1');
+	  var total = $('.carousel-item').length;
+	  var current = 0;
+	  $('#moveRight').on('click', function(){
+		var next=current;
+		current= current+1;
+		setSlide(next, current);
+	  });
+	  $('#moveLeft').on('click', function(){
+		var prev=current;
+		current = current- 1;
+		setSlide(prev, current);
+	  });
+	  function setSlide(prev, next){
+		var slide= current;
+		if(next>total-1){
+		 slide=0;
+		  current=0;
+		}
+		if(next<0){
+		  slide=total - 1;
+		  current=total - 1;
+		}
+			   $('.carousel-item').eq(prev).removeClass('active1');
+			   $('.carousel-item').eq(slide).addClass('active1');
+		  setTimeout(function(){
+	
+		  },800);
+		
+	
+		
+		console.log('current '+current);
+		console.log('prev '+prev);
+	  }
+	});
+	</script>
+		<script src="{% static '/js/main.js' %}" type="text/javascript"></script>
+
+{% endblock content %}

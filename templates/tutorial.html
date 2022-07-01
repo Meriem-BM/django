@@ -1,0 +1,11 @@
+{% load rest_framework %}
+
+<html><body>
+<h1>Tutorials</h1>
+<ul>
+    {% for tutorial in tutorials %}
+    <li>{{ tutorial.title }} : {{ tutorial.description }} {{ tutorial.published }}</li>
+    {% endfor %}
+</ul>
+
+</body></html>

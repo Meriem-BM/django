@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html>
+
+<head>
+	<meta charset="UTF-8"/>
+	<script src="{% static '/lib/anime.min.js' %}"></script>
+	<script src="{% static '/lib/gsap.min.js' %}"></script>
+	<script src="{% static '/lib/gsap-latest-beta.min.js' %}"></script>
+</head>
+
+<body style="background: rgba(0, 0, 0) url(/static/images/take.png) no-repeat fixed;">
+<div class="page-wrapper chiller-theme toggled">
+	
+    {% block sidebar %} {% include "navbar.html" %} {% endblock sidebar %}
+    <main class="page-content">
+
+        {% block content %}
+        <!-- Content Goes here -->
+        {% endblock content %}
+
+	{% include "footer.html" %}
+
+	</main>
+
+</div>
+</body>
+
+</html>

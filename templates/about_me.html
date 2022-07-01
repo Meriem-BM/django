@@ -1,0 +1,88 @@
+{% load static %}
+        
+        <title>CodePy</title>
+        <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+        <script src="{% static '/lib/jquery-3.6.0.min.js' %}"></script>
+        <script src="{% static '/js/about_me.js' %}"></script>
+        <link type="text/css" href="{% static '/css/about_me.css' %}" rel="stylesheet">
+
+<body style="background: #D5896F url('/static/images/sabara.png') no-repeat bottom right fixed;">
+        <div class="container">
+             <div class="slide swiper-slide-active" pos="1">
+                <div class="container__img">          
+                  <img src="{% static '/images/mer2.jpg' %}" alt="">
+                </div>
+                <div class="container__content">
+                  <span class="container__code">Casablanca, Morocco</span>
+                  <div class="container__title">Hi, Meriem BARHOUMI</div>
+                  <div class="container__text">Graduate of computer science along with self-learning with a fresh experience across the Full-stack of software development, IT Automation and Web designing. I have built some projects on small teams and I'm looking for a role where I can grow and continue to learn from other experienced team members. </div>
+                </div>
+            </div>
+            <div class="slide swiper-slide-active" pos="2" style="opacity:0;display:none">
+                <div class="container__img">          
+                  <img src="{% static '/images/catj.jpg' %}" alt="">
+                </div>
+                <div class="container__content">
+                  <span class="container__code">Software Developement</span>
+                  <div class="container__title">See What I'm Good At</div>
+                  <div class="container__text">
+                    <a class="skills" role="button">Python</a>
+                    <a class="skills" role="button">JavaScript</a>
+                    <a class="skills" role="button">Django</a>
+                    <a class="skills" role="button">Web development</a>
+                    <a class="skills" role="button">Frontend development </a>
+                    <a class="skills" role="button">UI/UX design</a>
+                    <a class="skills" role="button">Full-stack development</a>
+                    <a class="skills" role="button">IT Automation</a>
+                    <a class="skills" role="button">software development</a>
+                    </div>
+                    <div class="container__text">
+                    <a class="skills" role="button">English</a>
+                    <a class="skills" role="button">French</a>
+                    <a class="skills" role="button">Arabic</a>
+                  </div>
+                </div>
+            </div>
+            <div class="slide swiper-slide-active" pos="3" style="opacity:0;display:none">
+                <div class="container__img">          
+                  <img src="{% static '/images/hu.png' %}" alt="">
+                </div>
+                <div class="container__content">
+                  <span class="container__code">Find me online</span>
+                  <div class="container__title">Check Out My Accounts</div>
+                  <div class="container__text">
+                    <a class="skills" href="{% static '/doc/CV_Meriem_Barhoumi.pdf' %}" download="Meriem_CV">Resume</a>
+                  </div>
+                  <div class="container__text">
+                    <div class="follow-icons">
+                      <li><span>Find me here</span></li>
+                      <li><a><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a><i class="fab fa-instagram"></i></a></li>
+                      <li><a><i class="fab fa-twitter"></i></a></li>
+                      <li><a><i class="fab fa-facebook-f"></i></a></li>
+                      <li><a><i class="fab fa-github"></i></a></li>
+                      <li><a><i class="fab fa-stack-overflow"></i></a></li>
+                      <li><a><i class="fab fa-codepen"></i></a></li>
+                    </div>
+                  </div>
+                </div>
+            </div>
+          <div class="slide-toggle-container">
+            <p class="slide-toggle"  direction="1" height="50" width="50">
+              Info
+            </p>
+            <p class="slide-toggle" direction="2" height="50" width="50">
+              Skills
+            </p>
+            <p class="slide-toggle" direction="3" height="50" width="50">
+              Resume
+            </p>
+          </div>
+
+          <div class="container__pagination swiper-pagination-bullets">
+            <div class="swiper-pagination-bullet"></div>
+            <div class="swiper-pagination-bullet"></div>
+            <div class="swiper-pagination-bullet"></div>
+          </div>
+        </div>
+</body>

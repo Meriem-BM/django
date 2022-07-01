@@ -1,0 +1,84 @@
+{% load static %}
+
+<title>CodePy</title>
+<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="{% static '/css/contact.css' %}">
+<script src="{% static '/js/contact.js' %}"></script>
+
+<div class="background" style="background: url('/static/images/coffee.png') no-repeat bottom right fixed;">
+    <div class="container">
+      <div class="screen">
+        <div class="screen-header">
+          <div class="screen-header-left">
+            <div class="screen-header-button close"></div>
+            <div class="screen-header-button maximize"></div>
+            <div class="screen-header-button minimize"></div>
+          </div>
+          <div class="screen-header-right">
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+            <div class="screen-header-ellipsis"></div>
+          </div>
+        </div>
+        <div class="screen-body">
+          <div class="screen-body-item left">
+            <div class="app-title">
+              <span>CONTACT</span>
+              <span>US</span>
+            </div>
+            <div class="app-contact">
+                CONTACT INFO : +212 762 161 472
+                <br><br>
+                DDDDDDDDDDDDDDDDDD
+            </div>
+
+          </div>
+          <form class="screen-body-item" action="" method="post">
+            {% csrf_token %}
+            <div class="app-form">
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="NAME" type="name" name="name" maxlength="255" required id="id_name">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="EMAIL" type="email" name="email" maxlength="255" required id="id_email">
+              </div>
+              <div class="app-form-group">
+                <input class="app-form-control" placeholder="SUBJECT" value="Contacting MB's Blog" type="text" name="subject" maxlength="255" required id="id_subject">
+              </div>
+              <div class="app-form-group message">
+                <textarea class="app-form-control" placeholder="MESSAGE"></textarea>
+              </div>
+              <div class="app-form-group buttons">
+                <button class="app-form-button">CANCEL</button>
+                <button class="app-form-button">SEND</button>
+              </div>
+            </div>
+        </form>
+        </div>
+      </div>
+      <div class="credits">
+        <span> Find me here</span> 
+        <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+            <img src="{% static '/svg/facebook.png' %}" width="22px" alt="Facebook">
+        </a>
+        <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+          <img src="{% static '/svg/twitter.png' %}" width="25px" style="margin-bottom: -1px; margin-left: -2px;" alt="Twitter">
+      </a>
+        <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+            <img src="{% static '/svg/linkedin.png' %}" width="22px" alt="LinkedIn">
+        </a>
+        <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+            <img src="{% static '/svg/instagram.png' %}" width="20px" style="margin-bottom: -2px;" alt="Instagram">
+        </a>
+        <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+            <img src="{% static '/svg/github.png' %}" width="22px" alt="GitHub">
+        </a>
+        <a class="credits-link" href="https://dribbble.com/shots/2666271-Contact" target="_blank">
+          <img src="{% static '/svg/codepen.png' %}" width="23px" alt="CodePen">
+        </a>
+      </div>
+    </div>
+  </div>
+  
+
+

@@ -1,0 +1,148 @@
+{% load static %}
+
+{% block sidebar %}
+
+<link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
+<script src="https://kit.fontawesome.com/afd6aa68df.js" crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<link  rel="stylesheet" type="text/css" href="{% static '/css/nav.css' %}" />
+
+<main>
+  <div id="nav" class="bar-content">
+
+            {% if user.is_authenticated %}
+              <span class="login_logout" style="color:rgb(255, 255, 255);"><strong>Hi {{ user.username }}! </strong>
+              <a style="color:rgb(0, 111, 119); text-decoration: none; margin-left: 10px;" href="{% url 'logout' %}">Log Out</a></span>
+            {% else %}
+              <span class="login_logout" style="color: rgb(255, 255, 255);"><strong>You are not logged in</strong>
+              <a style="color:rgb(0, 111, 119); text-decoration: none; margin-left: 10px;" href="{% url 'login' %}">Log In</a></span>
+            {% endif %}
+    
+            <div class="social-media">
+            <ul>
+              <li class="codepen"><a href="#"><i class="fa fa-codepen"></i></a></li>
+              <li class="stack-overflow"><a href="#"><i class="fa fa-stack-overflow"></i></a></li>
+              <li class="github"><a href="#"><i class="fa fa-github"></i></a></li>
+              <li class="facebook"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+              <li class="twitter"><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+              <li class="instagram"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+              <li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+            </div>
+
+          <div class="box-search">
+              <form name="search">
+                  <input type="text" class="input" name="txt"
+                  onmouseout="document.search.txt.value = ''" placeholder="Search...">
+              </form>
+                  <i class="fas fa-search"></i>
+          </div>
+
+  </div>
+</main>
+
+  <div id="mySidebar" class="sidebar-wrapper">
+    <div class="sidebar-content">
+      <div class="sidebar-header">
+        <div class="user-pic">
+          <img class="img-responsive img-rounded" src="{% static '/images/meri.jpg' %}" alt="User picture">
+        </div>
+        <div class="user-info">
+          <span class="user-name">Meriem
+            <strong>Barhoumi</strong>
+          </span>
+          <span class="user-role">Administrator</span>
+          <span class="user-status">
+            <i class="fa fa-circle"></i>
+            <span>Online</span>
+          </span>
+        </div>
+      </div>
+      <!-- sidebar-header  -->
+      <div class="sidebar-menu">
+        <ul>
+          <li class="header-menu">
+            <span>General</span>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fas fa-home"></i>
+              <span>Home</span>
+            </a>
+          </li>
+
+          <li class="sidebar-dropdown">
+            <a class="dropdown-btn">
+            <i class="fas fa-code"></i>
+              <span>Projects</span>
+            </a>
+            <div class="sidebar-submenu">
+              <ul>
+                <li>
+                  <a href="#">Python
+                  </a>
+                </li>
+                <li>
+                  <a href="#">Django</a>
+                </li>
+                <li>
+                  <a href="#">Others</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="far fa-newspaper"></i>
+              <span>Articles</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fas fa-user"></i>
+              <span>About</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="#">
+              <i class="fas fa-comments"></i>
+              <span>Contact</span>
+            </a>
+          </li>
+
+          <li class="header-menu">
+            <span>Extra</span>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-book"></i>
+              <span>Books</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fas fa-quote-left"></i>
+              <span>Quotes</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-folder"></i>
+              <span>Examples</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <script src="{% static '/js/nav.js' %}" type="text/javascript"></script>
+
+  {% endblock sidebar %}
